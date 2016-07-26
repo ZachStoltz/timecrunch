@@ -1,0 +1,42 @@
+{
+  "name": "lularoe-image-parser",
+  "version": "1.0.0",
+  "description": "A node.js parser for file upload timestamp changing",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc npm run t",
+    "test": "mocha ./api/parser.spec.js --ui tdd --compilers js:babel-register",
+    "test:debug": "node-inspector & npm t -- --debug-brk",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Zachary Stoltz",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.13.0",
+    "babel-core": "^6.0.20",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "babel-register": "^6.9.0",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "easy-zip2": "^1.0.0",
+    "eslint": "^1.10.3",
+    "express": "^4.14.0",
+    "express-formidable": "^0.1.3",
+    "lodash": "^4.13.1",
+    "path": "^0.12.7",
+    "rimraf": "^2.5.3",
+    "serve-static": "^1.11.1",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "nyc": "^7.0.0",
+    "supertest": "^1.2.0"
+  }
+}
